@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Contact manager</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/knockout")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @RenderSection("scripts", required: false)
+      
+
+<style type="text/css">
+body {
+margin-top: 100px;
+background-color: #1ABC9C;
+}
+</style>
+    </head>
+
+    <body>
+
+@Html.Partial("~/Views/Shared/_Menu3.cshtml")
+
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+
+    @RenderSection("featured", required: false)
+    @RenderBody()
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+
+@*<!-- Page Heading -->
+<div class="row">
+
+<div class="col-lg-3">
+</div>
+<div class="col-lg-6">
+
+<div class="contenedor">
+<br>
+<br>
+
+<table>
+<tr>
+<td width="20"></td>
+<td><img src="imagenes/inh_1.png" width="165" height="120" style="text-shadow: black 0.1em 0.1em 0.2em"></td>
+<td width="20"></td>
+<td><strong><font color="#fff" size="+3" style="text-shadow: black 0.1em 0.1em 0.2em">SISTEMA DE CONTROL DE ACTIVIDADES HÍPICAS</font></strong></td>
+
+</tr>
+</table>
+<br>
+
+<center><strong><font color="#fff">INICIO DE SESIÓN.</font></strong></center> <br>
+                            
+<form id="defaultForm" method="post" class="form-horizontal" action="sesion_iniciada.php">
+                  
+<div class="form-group">
+<label class="col-lg-3 col-xs-5 col-sm-4 control-label"><font size="3%" color="#FFF">Usuario</font></label>
+<div class="col-lg-6 col-xs-5 col-sm-4">
+<input type="text" class="form-control" name="nombre" placeholder="Nombre de Usuario" required />
+</div>
+</div>
+
+                        
+
+<div class="form-group">
+<label class="col-lg-3 col-xs-5 col-sm-4 control-label"><font size="3%" color="#FFF">Clave</font></label>
+<div class="col-lg-6 col-xs-5 col-sm-4">
+<input type="password" class="form-control" name="pass" placeholder="Clave" required />
+</div>
+</div>
+
+                      
+<br>
+
+<div class="form-group">
+<div class="col-lg-1 col-lg-offset-6">
+<button type="submit" class="btn btn-lg btn-success" name="signup" value="Sign up">Iniciar Sesion</button><br>
+<br>
+
+</div>
+</div>
+<div class="form-group"> 
+<div class="col-lg-15" align="center">
+<font color="#FFFFFF" size="2%">Copyleft &copy; 2015 | Dirección de Informática | Instituto Nacional de Hipódromos<br>
+Ministerio del Poder Popular para el Deporte.
+</font><br><br>
+</div></div>                      
+</div> <!-- FIN CONTENEDOR -->
+
+<div class="col-lg-3">
+</div>
+                   
+</form>
+                        
+</div>
+          
+
+                 
+</div>
+<!-- /.row --> *@       
+        
+
+
+
+
+
+        <footer>
+    <!-- jQuery -->
+    <script src="Content/sb_admin/Foot1/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Content/sb_admin/Foot1/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="Content/sb_admin/Foot1/metisMenu.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="Content/sb_admin/Foot1/sb-admin-2.js"></script>
+    <script src="Content/sb_admin/Foot1/highlight.js"></script>
+    <script src="Content/sb_admin/Foot1/bootstrap-switch.js"></script>
+    <script src="Content/sb_admin/Foot1/main.js"></script>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
